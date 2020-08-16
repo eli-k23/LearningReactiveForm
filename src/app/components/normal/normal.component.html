@@ -1,0 +1,153 @@
+<div class="buttons">
+  Buttons :
+  <br />
+  <button mat-button> click </button>
+  <button mat-raised-button> click </button>
+  <button mat-flat-button> click </button>
+  <button mat-stroked-button> click </button>
+  <button mat-stroked-button> click </button>
+  <button mat-fab> click </button>
+  <button mat-mini-fab> click </button>
+  <button color='warn' mat-raised-button> click </button>
+</div>
+<div>
+  Button Toggle :
+  <br />
+  <mat-button-toggle #toggleButton checked>toggle</mat-button-toggle>
+  <mat-button-toggle #toggleButton1>toggle1</mat-button-toggle>
+
+  pick one : <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" q>
+    <mat-button-toggle value='Angular'>Angular</mat-button-toggle>
+    <mat-button-toggle value='React'>React</mat-button-toggle>
+    <mat-button-toggle value='Vue'>Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+
+  pick some : <mat-button-toggle-group #toggleGroup1="matButtonToggleGroup" multiple>
+    <mat-button-toggle value='Angular'>Angular</mat-button-toggle>
+    <mat-button-toggle value='React'>React</mat-button-toggle>
+    <mat-button-toggle value='Vue'>Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup1.value}}
+</div>
+
+<div>
+  Icon :
+  <br />
+  <mat-icon color='primary'>grade</mat-icon>
+</div>
+
+<div>
+  mat-toolbar :
+  <br />
+  <mat-toolbar color="primary" class="navbar">
+    <div>something</div>
+    <div>
+      <span>home</span>
+      <span>about</span>
+      <span>exit</span>
+    </div>
+  </mat-toolbar>
+</div>
+
+<div>
+  Mat Menu Module :
+  <br />
+  <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [mat-menu-trigger-for]="subMenu ">menu 1</button>
+    <button mat-menu-item>menu 2</button>
+  </mat-menu>
+  <button mat-flat-button [mat-menu-trigger-for]="appMenu"> click </button>
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>menu 1</button>
+    <button mat-menu-item>menu 2</button>
+    <button mat-menu-item>menu 3</button>
+    q </mat-menu>
+</div>
+
+<div>
+  Mat List :
+  <br />
+  <mat-list>
+    <mat-list-item>item 1</mat-list-item>
+    <mat-list-item>item 2 </mat-list-item>
+    <mat-list-item>item 3</mat-list-item>
+    <a mat-list-item href='#'>link 1</a>
+    <a mat-list-item href='#'>link 2</a>
+    <a mat-list-item href='#'>link 3</a>
+  </mat-list>
+</div>
+
+<div>
+  mat expantion panel
+  <br />
+  <mat-accordion multi="true">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          title
+        </mat-panel-title>
+        <mat-panel-description>
+          descrption
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        this is mt data <br> wow
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          title 2
+        </mat-panel-title>
+        <mat-panel-description>
+          descrption 2
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        this is mt data <br> wow
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div>
+  Cards :
+  <br />
+  <mat-card>
+    <mat-card-title>
+      title
+    </mat-card-title>
+    <mat-card-content>content</mat-card-content>
+    <mat-card-actions>login</mat-card-actions>
+  </mat-card>
+</div>
+
+<div>
+  Tabs
+  <br />
+  <mat-tab-group>
+    <mat-tab label="111">111</mat-tab>
+    <mat-tab label="222">222</mat-tab>
+    <mat-tab label="333">333</mat-tab>
+
+  </mat-tab-group>
+</div>
+
+
+
+<div>
+  Button Toggle :
+  <br />
+</div>
+
+<div>
+  Button Toggle :
+  <br />
+</div>
+
+<div>
+  Button Toggle :
+  <br />
+</div>

@@ -1,0 +1,14 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+
+}
+
+.container {
+  height: 400px;
+}
